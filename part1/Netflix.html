@@ -4,16 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix.in</title>
+    <style>
+        
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .user img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.hero {
+    height: 60vh;
+    background-image: url('https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5.fit_scale.size_1028x578.v1582751026.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-row {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.movie {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.movie img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #141414;
+}
+
+    </style>
 </head>
-<body style ="background-image: url('https://help.nflxext.com/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png');background-size:cover ;">
-
-<div style="text-align: center; padding: 100px;">
-<h4 style="color:white;" >Welcome Back!!</h4>
-<h1 style="color: white;">Unlimited movies ,TV Shows and more</h1>
-<h4 style="color:white">   Watch anywhere. cancel anytime.</h4>
-<input style="color:red ;"Restart Your Membership>
-
-</div>
-   
+<body>
+    <header>
+        <div class="logo">Netflix</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img src="https://static.vecteezy.com/system/resources/previews/014/194/215/original/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg" alt="User Avatar">
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Watch Something Incredible</h1>
+                <p>Your favorite movies and TV shows, all in one place.</p>
+                <button>Watch Now</button>
+            </div>
+        </section>
+        
+        <section class="content">
+            <h2>Trending Now</h2>
+            <div class="movie-row">
+                <div class="movie">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/best-family-movies-netflix-matilda-640269b78357b.jpg" alt="Movie 1">
+                </div>
+                <div class="movie">
+                    <img src="movie2.jpg" alt="Movie 2">
+                </div>
+                <!-- Add more movies as needed -->
+            </div>
+        </section>
+        
+        <section class="content">
+            <h2>Popular on Netflix</h2>
+            <div class="movie-row">
+                <div class="movie">
+                    <img src="movie3.jpg" alt="Movie 3">
+                </div>
+                <div class="movie">
+                    <img src="movie4.jpg" alt="Movie 4">
+                </div>
+                <!-- Add more movies as needed -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Netflix, Inc.</p>
+    </footer>
 </body>
 </html>
