@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    @keyframes topics{
+        from{
+            left: 0px;
+         background-color: yellow;
+         box-shadow: 0px 2px 3px 0px yellow;   
+        }
+        to{
+            left: 100px;
+            background-color: aqua ;
+            box-shadow: 1px 2px 0px 2px blueviolet;
+        }
+    }
+    div:hover {
+        text-align: center;
+        margin: auto;
+        position:absolute;
+        animation-name: topics;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+        /*animation-timing-function:ease ;*/
+        /*animation-delay: 2s;*/
+
+        background-color: aqua;
+        width:100px;
+    }
+</style>
+</head>
+<body>
+   <div>home</div>
+   <div>service</div>
+   <div>login</div>
+</body>
+</html>
