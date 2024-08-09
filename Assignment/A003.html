@@ -1,13 +1,113 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <style>
+    *{
+        margin: 0px;
+    }
+    .nav{
+       background-color: gray; 
+       height: 100px;
+       width: 100%;
+       display: flex;
+       /* justify-content: center; */
+       align-items: center;
+    }
+    .navleft{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: center; */
+        /* background-color: #fff; */
+    }
+    .navright{
+        display: flex;
+        width: 50%;
+        /* background-color: aliceblue; */
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    a{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+      }
+      a:link{
+        color: white;
+        text-decoration: none;
+      }
+      a:hover{
+        color: black;
+        background-color: aliceblue;
+      }
+      a:active{
+        color: rgb(52, 239, 0);
+      }
+      a:visited{
+        color: gray;
+      }
+
+      .imgdiv{
+        margin-top: 50px;
+          width: 100%;
+          display: flex;
+        justify-content: space-around;
+        align-items: center
+      }
+      .imgdiv img{
+        height: 350px;
+        width: 350px;
+           /* flex-wrap: wrap; */
+        flex-direction: row;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      .foot{
+        background-color: gray;
+        height: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+   </style>
 </head>
 <body>
-    <img src="https://i.pinimg.com/236x/0f/07/71/0f0771cdb751568e01ee6d6a044a4bdb.jpg">
-    <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80">
-    <img src="">
+    <div class="nav">
+     <div class="navleft">
+            <h1 style="color: aliceblue;"> Likhitha Reddy</h1>
+     </div>
+     <div class="navright">
+            <a href="#">
+                Home
+            </a>
+            <a href="#">
+                About
+            </a>
+            <a href="#">
+                contact
+            </a>
+            <a href="#">
+                login
+            </a>
+     </div>        
+    </div>
+    <div class="imgdiv">
+        <img src="https://i.pinimg.com/236x/0f/07/71/0f0771cdb751568e01ee6d6a044a4bdb.jpg" width="250px" height="180px">
+        <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80" width="250px" height="180px">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/nature-quotes-landscape-1648265648.jpg" width="250px" height="180px">
+    </div>
+    <div class="foot">
+        <h3>
+            @ copy rights reserved 
+        </h3>
+    </div>
 </body>
 </html>
